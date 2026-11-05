@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Rye&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color:purple;
+    color:black;
+    font-family: Rye ;
+    text-align: center;
+}
+.secao{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    box-shadow: 1px 1px 7px rgb(0, 0, 0);    
+    border-radius: 7px;
+    text-align: center;
+}
+.inicio{
+    /*alutura minima*/
+    min-height: 100ch;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+img{
+    width: 320px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 35px;
+}
+.inicio h2{
+    font-size: 70px;
+}.btn{
+    /*Transforma link em um bloco*/
+    display: inline-block;
+    /*margen da dereita*/
+    margin-right: 10px;
+   /*espaçamento interno da esquerda e de cima*/
+    padding: 13px 18px;
+     /*colocando borda*/
+    border: 1px solid black;
+    /*arredondaando broda*/
+    border-radius: 8px;
+    /*negrito*/
+    font-weight: bold;
+    /*cor de letra*/
+    color: black;
+    /*esativa estilo de link*/
+    text-decoration: none;
+}
+
+.btn-pricipal{
+    background-color: rgb(0, 0, 0); color: yellow;
+}
+ /*configurnado secao sobre*/
+ .fundo{
+   background-color: purple;
+    /*sem largura, oupar todo espaco*/
+    max-width:1000px;
+    color: #131212;
+    border: #050505;
+ }
+ .sobre{
+    background-color: white;
+    display: flex;
+    gap: 20px;
+ }
+
+ .sobre p {
+    width:50%;
+ }
+ .lista-inf{
+    background-color: white;
+    border-left: 2px solid purple;
+    padding: 2px;
+    list-style: none ;
+    color: #000000;
+ }
+ .lista-inf li { margin-bottom: 12px;}
+
+ /*prsonalizando experiência*/
+ .cartao{
+    margin-bottom: 18px;
+    padding: 24px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background:purple;
+    /*sobra*/
+    box-shadow: 3px 3px 10px #ffffff;
+ }
+.cartao h3{
+    margin-bottom: 5px;
+}
+.data{
+    color: #050505;
+    font: bold;
+}
+.empresa{
+    color: #050505;
+}
+.grade-cartao{
+    background: color #0a0a0a;
+    display: grid;
+    /*quantas colunas você quer*/
+    grid-template-columns: 1fr 1fr;
+    /*espaçamento*/
+    gap:30px;   
+}
+.lista-habilidades{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    list-style: none; 
+    gap: 10px;
+}
+.lista-habilidades li { margin-bottom: 18px;
+    padding: 15px;
+    border: 1px solid rgb(158, 155, 155);
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.lista-habilidades i{
+    font-size: 28px;
+}
+.lista-habilidades li:hover{
+    scale: 1.1;
+    transition: 1s;
+    background-color: #403e42c5;
+    color: rgb(255, 252, 252);
+}
+.cartao:hover{
+    scale: 1.1;
+    transition:1s;
+    background-color: #5c2396c5;
+}
+.fundo{
+    background-color: rgb(255, 255, 255);
+}
+.fundo2{
+    background: rgb(255, 254, 254);
+}
+
+/*personalizando pojetos*/
+.grade-projeto{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1px;
+    margin-top:12px;
+    text-align: center;
+}
+.grade-projeto a{
+    padding: 1px;
+    text-decoration: none;
+    color: #403e42c5;
+    border: 1px solid #d0d5dd;
+    border-radius:8px;
+    background-color:white;
+    font-weight: bolder;
+    text-align:center;
+
+}
+.grade-projeto a i{ font-size: 40px; display: block;}
+
+#face{ color:blue }
+#insta{ color: orange; }
+#linkedin{ color: cornflowerblue; }
+#git{ color:black; }
+#zap{ color: green; }
+
+.grade-projeto a:hover{
+    box-shadow: 1px 2px 10px #403e42c5;
+    scale: 1.1;
+    transition: 1s;
+}
+.lista-contato{
+    list-style:none;
+    padding: 0;
+}
+.lista-contato li{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.lista-contato i{
+    color: #0ebe6c;
+    width: 30px;
+}
+footer{
+    padding: 60px;
+    background-color:black;
+    color:#fafcfc;
+    text-align: center;
+    border-radius: 7px;
+    width: auto;
+}
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    /*pegar toda a altura da tela - VH*/
+    height: 100vh;  
+    padding: 32px 24px;
+    background-color: purple;
+    color: yellow;
+}
+.perfil{
+    text-align:center;
+    margin-bottom: 35px;
+}
+.avatar{
+    width: 85px;
+    height: 55px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    margin: auto 5px;
+    font-size: 35px;
+    padding-top: 12px;
+}
+.lista-menu{
+    padding: 0;
+    list-style: none;
+    
+}
+.perfil{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.avatar{
+    width: 85px;
+    height: 85px;
+    color: yellow;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista-menu{
+    padding: 0;
+    list-style: none;
+}
+.lista-menu a {
+    color: black;
+    text-decoration: none;
+    background: yellow;
+    display: block;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+}
+.lista-menu a:hover{
+    background-color: #151616;
+    color: black;
+    transform: translateX(20px);
+    transition: 1s;
+}
+.lista-menu i {
+    font-size: 25px;
+    margin-right: 30px;
+}
+.botao-menu, .fundo-menu{
+    display: none;
+}
+.whats{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    font-size: 50px;
+    text-decoration: none;
+    color: green;
+
+}
+.whats:hover{
+    color: #0d4133;
+    transform: scale(1.1);
+    transition:1s;
+}
+/*MODO CELULAR ABIXO*/
+@media(max-width:1080px){
+        .botao-menu{
+/* apareça o icone de menu */
+        display:block;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        padding: 12px 15px;
+        border:none;
+        background: black;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+    .menu-lateral{
+        transform: translateX(-100%);
+        transition: 0.5s;
+        z-index: 5;
+    }
+    /*classe que irá fazer o menu aparecer na tela*/
+    .menu-lateral.aberto{
+        transform: translateX(0);
+    }
+    .fundo-menu.visivel{
+        display:block;
+        position: fixed;
+        inset: 0;
+        background: yellow;
+    }
+    .fundo{
+        margin: 0;
+    }
+    .inicio{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 100px ;
+    }
+    h2{font-size:12px;}
+    .sobre{flex-direction:column; }  
+    .sobre p{width: 10%;}
+    .grade-cartao{ 
+        grid-template-columns: 1fr ; 
+    }
+    .lista-habilidades{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grade-redes{ grid-template-columns: 1fr 1fr;}
+    .secao{ padding: 0px 20px;}
+}
+
+
+
+     
+    
